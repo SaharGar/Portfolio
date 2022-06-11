@@ -23,10 +23,16 @@ export const ProjectsPreviewList = () => {
   }
 
   const setPage = (diff) => {
-    if (currPageIdx + diff < 0) setCurrPageIdx(Math.floor(projects.length / pageSize))
-    else if (currPageIdx + diff > Math.floor(projects.length / pageSize)) setCurrPageIdx(0)
-    else setCurrPageIdx(prevIdx => prevIdx + diff)
-  }
+    // if (pageSize === 1) {
+    //   if (currPageIdx + diff < 0) setCurrPageIdx(Math.floor(projects.length / pageSize))
+    //   else if (currPageIdx + diff > Math.floor(projects.length / pageSize)) setCurrPageIdx(0)
+    //   else setCurrPageIdx(prevIdx => prevIdx + diff)
+    // } else {
+      if (currPageIdx + diff < 0) setCurrPageIdx( pageSize === 1 ? projects.length - 1 : Math.floor(projects.length / pageSize))
+      else if ((pageSize === 1 && currPageIdx + diff === projects.length) || currPageIdx + diff > Math.floor(projects.length / pageSize)) setCurrPageIdx(0)
+      else setCurrPageIdx(prevIdx => prevIdx + diff)
+    }
+  // }
 
   if (!projectsToRender || !pageSize) return <h1>Loading...</h1>
   return (
