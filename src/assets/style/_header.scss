@@ -3,11 +3,19 @@
     padding: 15px 20px;
 
     a {
-        font-size: 40px;
+        font-size: 25px;
         font-family: pacifico, sans-serif;
         &:hover {
             transform: rotate(8deg) scale(1.1);
         }
+
+        @media screen and (min-width: 550px) {
+            font-size: 30px;
+        }
+        @media screen and (min-width: 700px) {
+            font-size: 40px;
+        }
+
     }
 
     .nav {
@@ -19,7 +27,7 @@
             transform: unset;
             color: #6426d9;
             padding: 10px 20px;
-            font-size: 20px;
+            font-size: 14px;
             border: 1px solid transparent;
             border-radius: 30px;
             
@@ -32,6 +40,14 @@
                 background-color: #6426d9;
                 color: white;
             }
+
+            @media screen and (min-width: 550px) {
+                font-size: 16px;
+            }
+            @media screen and (min-width: 700px) {
+                font-size: 20px;
+            }
+
         }
     }
 }
