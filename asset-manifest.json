@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.cbb7db98.css",
+    "main.js": "/Portfolio/static/js/main.6ca65594.js",
+    "static/media/hero2.jpg": "/Portfolio/static/media/hero2.ab85ef7ffcd004cc9a94.jpg",
+    "static/media/me.jpg": "/Portfolio/static/media/me.d850676acd9a40700a56.jpg",
+    "static/media/weather.JPG": "/Portfolio/static/media/weather.fc8f8c8e9ce035a57318.JPG",
+    "static/media/dotify.JPG": "/Portfolio/static/media/dotify.3b369554cd3a144e2c09.JPG",
+    "static/media/appsus.JPG": "/Portfolio/static/media/appsus.0fb77631c898c79e83f3.JPG",
+    "static/media/restaurant.JPG": "/Portfolio/static/media/restaurant.7bf78afadd2a3d9dbe90.JPG",
+    "static/media/memegen.JPG": "/Portfolio/static/media/memegen.2dd28c98c1520a6322dd.JPG",
+    "static/media/minesweeper.JPG": "/Portfolio/static/media/minesweeper.bbc65fac7fc7f1fca287.JPG",
+    "static/media/checkers.JPG": "/Portfolio/static/media/checkers.0b9f17500948e465daf6.JPG",
+    "index.html": "/Portfolio/index.html",
+    "main.cbb7db98.css.map": "/Portfolio/static/css/main.cbb7db98.css.map",
+    "main.6ca65594.js.map": "/Portfolio/static/js/main.6ca65594.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cbb7db98.css",
+    "static/js/main.6ca65594.js"
+  ]
+}
