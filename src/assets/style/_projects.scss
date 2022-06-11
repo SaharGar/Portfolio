@@ -2,6 +2,10 @@
 
     gap: 50px;
 
+    .page-title {
+        font-size: 50px;
+    }
+
     .projects-list {
         display: grid;
         grid-template-columns: 400px 400px 400px;
@@ -13,6 +17,7 @@
             background-repeat: no-repeat;
             background-position: center;
             border-radius: 10px;
+            box-shadow: 1px 1px 15px 0px #00000080;
 
             &:hover {
                 transform: scale(1.05);
@@ -25,18 +30,30 @@
                 background-color: rgba(83, 83, 83, 0.7);
                 border-radius: 10px;
                 color: white;
+                position: relative;
+                text-align: center;
 
                 &:hover {
                     background-color: rgb(20, 20, 81, 0.95);
                 }
 
 
+                .project-name {
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%,-50%);
+                }
+
                 .project-desc,
                 .project-link {
-                    display: none;
+                    opacity: 0;
+                    width: 80%;
+                    transition: all 1.5s;
                 }
 
                 .project-link {
+                    font-size: 20px;
                     border: 1px solid #6426d9;
                     border-radius: 10px;
                     padding: 5px;
@@ -56,9 +73,7 @@
 
                     .project-desc,
                     .project-link {
-                        display: block;
-                        width: 80%;
-                        text-align: center;
+                        opacity: 1;
                     }
                 }
             }
