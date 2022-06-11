@@ -12,8 +12,8 @@ export const ProjectsPreviewList = () => {
   }, [currPageIdx, pageSize])
 
   useEffect(() => {
-    if (window.innerWidth >= 1120) setPageSize(3)
-    else if (window.innerWidth >= 760) setPageSize(2)
+    if (window.innerWidth > 1120) setPageSize(3)
+    else if (window.innerWidth > 760) setPageSize(2)
     else setPageSize(1)
   }, [])
 
