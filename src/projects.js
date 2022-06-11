@@ -11,42 +11,50 @@ export const projects = [
         name: 'Dotify',
         img: dotifyImg,
         desc: 'Spotify clone app',
-        url: 'https://project-dotify.herokuapp.com/'
+        url: 'https://project-dotify.herokuapp.com/',
+        mainTech: ['JavaScript', 'React.JS','Node.JS', 'MongoDB','Web Sockets', 'Sass']
     },
     {
         name: 'Weather',
         img: weatherImg,
         desc: 'A weather app to know the weather around the world',
-        url: 'https://sahargar.github.io/WeatherApp/'
+        url: 'https://sahargar.github.io/WeatherApp/',
+        mainTech: ['JavaScript', 'React.JS', 'Sass']
     },
     {
         name: 'Appsus',
         img: appsusImg,
         desc: 'An app that contains three apps: Bookstore, Notes app and a Gmail mock app',
-        url: 'https://sahargar.github.io/Appsus/'
+        url: 'https://sahargar.github.io/Appsus/',
+        mainTech: ['JavaScript', 'React.JS', 'Sass']
     },
     {
         name: 'Checkers',
         img: checkersImg,
         desc: 'A checkers app to play with a friend (offline)',
-        url: 'https://sahargar.github.io/Checkers/'
+        url: 'https://sahargar.github.io/Checkers/',
+        mainTech: ['JavaScript', 'React.JS','Sass']
+    },
+    {
+        name: 'Restaurant',
+        img: restaurantImg,
+        desc: 'An app that mocks a restaurant ordering and delivery system',
+        url: 'https://sahargar.github.io/Restaurant/',
+        mainTech: ['JavaScript','TypeScript', 'React.JS', 'Sass']
+
     },
     {
         name: 'Meme Generator',
         img: memeGenImg,
         desc: 'A meme generator app',
-        url: 'https://sahargar.github.io/Meme-Generator/'
+        url: 'https://sahargar.github.io/Meme-Generator/',
+        mainTech: ['JavaScript', 'CSS3', 'HTML5', 'Canvas']
     },
     {
         name: 'Mine Sweeper',
         img: mineSweeperImg,
         desc: 'A mine sweeper app',
-        url: 'https://sahargar.github.io/Mine-Sweeper/'
-    },
-    {
-        name: 'Restaurant',
-        img: restaurantImg,
-        desc: 'An app that mocks a restaurant oredering and delivery system',
-        url: 'https://sahargar.github.io/Restaurant/'
+        url: 'https://sahargar.github.io/Mine-Sweeper/',
+        mainTech: ['JavaScript', 'CSS3', 'HTML5']
     },
 ]

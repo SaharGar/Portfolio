@@ -6,26 +6,16 @@ export const ProjectsPreviewList = () => {
   const [pageSize, setPageSize] = useState(null)
   const [currPageIdx, setCurrPageIdx] = useState(0)
   const [projectsToRender, setProjectsToRender] = useState(null)
-  
+
   useEffect(() => {
     setProjectsToRender(setProjectsForDisplay(currPageIdx))
   }, [currPageIdx, pageSize])
 
   useEffect(() => {
-    window.innerWidth < 650? setPageSize(2) : setPageSize(3)
-  },[])
-  
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      if(window.innerWidth < 650) {
-        if(pageSize !== 2) setPageSize(2)
-      } else if(pageSize !== 3) setPageSize(3)
-    },1000)
-
-    return() => {
-      clearInterval(intervalId)
-    }
-  },[])
+    if (window.innerWidth >= 1120) setPageSize(3)
+    else if (window.innerWidth >= 760) setPageSize(2)
+    else setPageSize(1)
+  }, [])
 
   const setProjectsForDisplay = (pageIdx) => {
     const startIdx = pageIdx * pageSize
@@ -40,12 +30,15 @@ export const ProjectsPreviewList = () => {
 
   if (!projectsToRender || !pageSize) return <h1>Loading...</h1>
   return (
-    <div className="projects-preview-list-container flex align-center justify-center">
-      <button className='page-btn' onClick={() => setPage(-1)}>	&lt;</button>
-      <div className='projects-preview-list flex'>
-        {projectsToRender.map(project => <ProjectPreview key={project.name} project={project} />)}
+    <>
+      <h2 className='projects-preview-headline'>Projects Preview</h2>
+      <div className="projects-preview-list-container flex align-center justify-center">
+        <button className='page-btn flex align-center justify-center' onClick={() => setPage(-1)}><span>&lt;</span></button>
+        <div className='projects-preview-list flex'>
+          {projectsToRender.map(project => <ProjectPreview key={project.name} project={project} />)}
+        </div>
+        <button className='page-btn flex align-center justify-center' onClick={() => setPage(1)}><span>&gt;</span></button>
       </div>
-      <button className='page-btn' onClick={() => setPage(1)}>	&gt;</button>
-    </div>
+    </>
   )
 }
