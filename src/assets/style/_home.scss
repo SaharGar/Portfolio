@@ -15,7 +15,12 @@
             color: white;
 
             .img-container {
-                width: 300px;
+                width: 200px;
+
+                @media screen and (min-width: 650px) {
+                    width: 300px;
+                }
+
                 img {
                     border-radius: 50%;
                 }
@@ -24,8 +29,12 @@
             .about {
                 text-transform: uppercase;
                 .name {
-                    font-size: 40px;
+                    font-size: 30px;
                     margin-bottom: 20px;
+
+                    @media screen and (min-width: 500px) {
+                        font-size: 40px;
+                    }
 
                     @media screen and (min-width: 650px) {
                         font-size: 50px;
@@ -37,7 +46,11 @@
                 }
 
                 .title {
-                    font-size: 25px;
+                    font-size: 20px;
+
+                    @media screen and (min-width: 500px) {
+                        font-size: 25px;
+                    }
                     @media screen and (min-width: 650px) {
                         font-size: 30px;
                     }
@@ -66,21 +79,27 @@
     }
 
     .projects-preview-list-container {
-        gap: 10px;
+        gap: 5px;
         .page-btn {
             background-color: unset;
             border: 1px solid #6426d9;
             color: #6426d9;
-            font-weight: bold;
-            font-size: 20px;
-            min-width: 50px;
-            min-height: 50px;
+            font-size: 16px;
+            min-width: 40px;
+            min-height: 40px;
             border-radius: 50%;
             
             &:hover {
                 cursor: pointer;
                 background-color: #6426d9;
                 color: white;
+            }
+
+            @media screen and (min-width: 650px) {
+                font-size: 20px;
+                min-width: 50px;
+                min-height: 50px;
+                font-weight: bold;
             }
         }
 
@@ -130,6 +149,10 @@
             @media screen and (min-width: 900px) {
                 gap: 30px;
             }
+        }
+
+        @media screen and (min-width: 650px) {
+            gap: 10px;
         }
     }
 
