@@ -10,7 +10,7 @@ export const projects = [
     {
         name: 'Dotify',
         img: dotifyImg,
-        desc: 'Spotify clone app',
+        desc: 'A Spotify clone app',
         url: 'https://project-dotify.herokuapp.com/',
         mainTech: ['JavaScript', 'React.JS','Node.JS', 'MongoDB','Web Sockets', 'Sass']
     },
