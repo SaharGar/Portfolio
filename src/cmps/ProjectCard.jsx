@@ -9,7 +9,7 @@ export const ProjectCard = ({ project }) => {
           {project.mainTech.map(tech => <li key={tech} className='tech'>{tech}</li>)}
         </ul>
         <p className='project-desc'>{project.desc}</p>
-        <a className='project-link' href={project.url}>See Website</a>
+        <a className='project-link' href={project.url}>Visit Website</a>
       </div>
     </div>
   )

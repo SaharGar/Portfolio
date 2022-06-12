@@ -1,0 +1,30 @@
+.home-page {
+   
+    .projects-preview-headline {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    a {
+        display: block;
+        width: fit-content;
+        margin: 0 auto 50px;
+        border: 1px solid $primary;
+        color: $primary;
+        border-radius: 30px;
+        padding: 10px 20px;
+        font-size: 20px;
+
+        &:hover {
+            background-color: $primary;
+            color: $white-text;
+        }
+        @media screen and (min-width: 650px) {
+            font-size: 30px;
+        }
+
+        @media screen and (min-width: 1000px) {
+            font-size: 35px;
+        }
+    }
+}

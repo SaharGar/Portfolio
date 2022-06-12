@@ -1,10 +1,17 @@
+@import'./variables';
 @import'./fonts';
 @import'./mixins';
 @import './base';
 @import './helpers';
 
-@import './header';
-@import './footer';
+@import './pages//home';
+@import './pages//projects';
 
-@import './home';
-@import './projects';
+@import './cmps/header';
+@import './cmps/footer';
+@import './cmps/hero';
+@import './cmps/info';
+@import './cmps/projects-preview';
+@import './cmps/projects-list';
+@import './cmps/project-card';
+
