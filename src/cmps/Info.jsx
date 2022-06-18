@@ -5,7 +5,7 @@ export const Info = () => {
         <div className='info'>
             <h2>Hello There!</h2>
             <p>
-                I am a Full-Stack/Frontend Web Developer with a passion and
+                I am a Full-Stack Web Developer with a passion and
                 knowledge in writing single-page-applications using the latest
                 WEB technologies.
             </p>
