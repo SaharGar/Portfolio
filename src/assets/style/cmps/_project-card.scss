@@ -38,27 +38,40 @@
             gap: 20px;
             max-width: 90%;
             flex-wrap: wrap;
-            font-size: 12px;
+            font-size: 11px;
             position: absolute;
             left: 50%;
-            bottom: 10%;
+            bottom: 0%;
             transform: translateX(-50%);
             font-weight: bold;
             text-align: left;
 
             @media  screen and (min-width: 430px) {
                 font-size: 14px;
+                gap: 25px;
+            }
+
+            @media  screen and (min-width: 750px) {
+                font-size: 12px;
                 gap: 30px;
             }
 
+            @media  screen and (min-width: 850px) {
+                gap: 31px;
+            }
+
             @media  screen and (min-width: 1000px) {
-                font-size: 12px;
+                font-size: 11px;
                 gap: 20px;
             }
 
             @media  screen and (min-width: 1150px) {
-                font-size: 14px;
+                font-size: 12px;
                 gap: 30px;
+            }
+
+            @media  screen and (min-width: 1300px) {
+                font-size: 13px;
             }
             
         }

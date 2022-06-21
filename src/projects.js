@@ -12,7 +12,7 @@ export const projects = [
         img: dotifyImg,
         desc: 'A Spotify clone app',
         url: 'https://project-dotify.herokuapp.com/',
-        mainTech: ['JavaScript', 'React.JS','Node.JS', 'MongoDB','Web Sockets', 'Sass']
+        mainTech: ['JavaScript', 'React.JS','Node.JS', 'Redux + Thunk', 'MongoDB','Web Sockets', 'Sass']
     },
     {
         name: 'Weather',
@@ -40,7 +40,7 @@ export const projects = [
         img: restaurantImg,
         desc: 'An app that mocks a restaurant ordering and delivery system',
         url: 'https://sahargar.github.io/Restaurant/',
-        mainTech: ['JavaScript','TypeScript', 'React.JS', 'Sass']
+        mainTech: ['JavaScript', 'Redux Toolkit','TypeScript', 'React.JS', 'Sass']
 
     },
     {
